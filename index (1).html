@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Minha Página</title>
+	<style>
+		body {
+			background-color: #f5f5f5;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		header {
+			background-color: #e60000;
+			color: #fff;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px;
+		}p
+		
+		header h1 {
+			font-size: 1.8em;
+			margin: 0;
+		}
+		
+		header button {
+			background-color: transparent;
+			color: #fff;
+			font-size: 1.2em;
+			font-weight: bold;
+			border: none;
+			padding: 10px 20px;
+			cursor: pointer;
+			transition: opacity 0.3s ease;
+		}
+		
+		header button:hover {
+			opacity: 0.8;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Minha Página</h1>
+		<div>
+			<button>Voltar</button>
+			<button>Cardápio</button>
+			<button>Pedido</button>
+		</div>
+	</header>
+	<div class="container">
+		<!-- Conteúdo da página aqui -->
+	</div>
+</body>
+</html>
+
+<html>
+<head>
+	<title>Cardápio da Lanchonete</title>
+	<style>
+		body {
+			background-color: #f5f5f5;
+			font-family: Arial, sans-serif;
+		}
+		
+		h1 {
+			color: #e60000;
+			text-align: center;
+			margin-top: 20px;
+		}
+		
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin: 20px;
+		}
+		
+		.card {
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			margin-bottom: 20px;
+			padding: 20px;
+			width: calc(33.33% - 20px);
+			text-align: center;
+		}
+		
+		.card h2 {
+			color: #e60000;
+			font-size: 1.2em;
+			margin-top: 0;
+		}
+		
+		.card img {
+			max-width: 100%;
+			margin-bottom: 10px;
+		}
+		
+		.card p {
+			margin: 10px 0;
+		}
+		
+		.card button {
+			background-color: #e60000;
+			border: none;
+			color: #fff;
+			padding: 10px;
+			width: 100%;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		
+		.card button:hover {
+			background-color: #b30000;
+		}
+	</style>
+</head>
+<body>
+	<h1>Cardápio de Bebidas</h1>
+	<div class="container">
+		<div class="card">
+			<img src="img.jpg" alt="Refrigerante">
+			<h1>Refrigerantes</h1>
+			<h2>Latas</h2>
+      <h3>(Coca-cola, Fanta, Guaraná)</h3>.
+			<button>Adicionar ao carrinho</button>
+		</div>
+		<div class="card">
+			<img src="suco.jpg" alt="Suco">
+			<h1>Suco</h1>
+			<h2>Copo de suco natural</h2>
+      <h3>(Laranja, Limão, Abacaxi)</h3>
+			<button>Adicionar ao carrinho</button>
+		</div>
+		<div class="card">
+			<img src="cafe.jpg" alt="Café">
+			<h2>Café</h2>
+			<p>Xícara de café preto.</p>
+			<button>Adicionar ao carrinho</button>
+		</div>
+		<div class="card">
+			<img src="cha.jpg" alt="Chá">
+			<h2>Chá</h2>
+			<p>Xícara de chá (Camomila, Erva doce, Hortelã).</p>
+			<button>Adicionar ao carrinho</button>
+		</div>
+	</div>
+</body>
+</html>
+
