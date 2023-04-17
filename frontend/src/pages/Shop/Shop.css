@@ -17,7 +17,7 @@
   height: auto;
   place-items: center;
   grid-template-columns: 1fr 1fr 1fr;
-  margin:0 auto;
+  margin:0 auto auto auto;
   background-color: #e2dad8;
   border-radius: 2%;
   gap: 3px;
@@ -79,6 +79,7 @@
   flex-direction: column;
   justify-content: center;
   align-items:center;
+  text-align: center;
 }
 
 .description b{
