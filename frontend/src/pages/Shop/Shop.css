@@ -7,7 +7,7 @@
 
 .shopTitle{
   font-size: 1.7em;
-  color: #522a27;
+  color: #780501;
   margin:2px auto;
 }
 
@@ -18,7 +18,7 @@
   place-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   margin:0 auto;
-  background-color: #F2C078;
+  background-color: #e2dad8;
   border-radius: 2%;
   gap: 3px;
 }
@@ -28,16 +28,16 @@
   flex-direction: column;
   justify-content: flex-start;
   margin:4% auto;
-  background-color: #faedca;
+  background-color: #fff8f8;
   padding:12px 6px;
   border-radius: 4%;
-  border: 2px solid rgb(126, 63, 47);
+  border: 2px solid #3e0000;
   width: 300px;
-  
+  height: 300px;
 }
 
 .product:hover{
-  border:2px solid #fe5d26;
+  border:2px solid #d00e04;
   box-shadow: inset 8px 3px 20px 4px rgba(44, 44, 44, 0.5);
 }
 
@@ -54,17 +54,24 @@
   height: 2em;
   width: fit-content;
   margin: 0 auto;
-  border: 2px solid black;
+  border: 2px solid #780501;
   font-weight: bold;
   font-size: 1em;
-  background-color: rgb(253, 253, 253);
-  color: #7ebc89;
+  background-color: white;
+  color: #780501;
 }
 
 .addToCartBtn:hover{
-  border: 2px solid #7ebc89;
-  background-color: #c1dbb3;
-  color: rgb(253, 253, 253);
+  border: 2px solid white;
+  background-color: #780501;
+  color: white;
+}
+
+.addToCartBtn:active{
+  border: 2px solid #780501;
+  background-color: white;
+  color: #780501;
+  box-shadow: inset 3px 3px 1px 1px rgba(0,0,0,.4);
 }
 
 .description{
@@ -74,13 +81,13 @@
   align-items:center;
 }
 
-.description p b{
+.description b{
   font-size: 1.5em;
-  color: #0a0a0a;
+  color: #460000;
 }
 
 .description p{
-  color: #fe5d26;
+  color: #d00e04;
   font-weight: bold;
 }
 

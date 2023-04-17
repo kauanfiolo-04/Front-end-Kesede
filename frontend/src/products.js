@@ -12,49 +12,49 @@ export const PRODUCTS=[
   {
     id:1,
     productName: 'Dog Tradicional',
-    price:parseFloat(9.00),
+    price:parseFloat(9.00).toFixed(2),
     productImage: Dog_trad
   },
   {
     id:2,
     productName: 'Dog Prensado',
-    price:parseFloat(9.50),
+    price:parseFloat(9.50).toFixed(2),
     productImage: Dog_prensado
   },
   {
     id:3,
     productName: 'Dog Prensado com Ovo',
-    price:parseFloat(11.00),
+    price:parseFloat(11.00).toFixed(2),
     productImage: Prensado_Ovo
   },
   {
     id:4,
     productName: 'Dog Prensado com Purê',
-    price:parseFloat(11.00),
+    price:parseFloat(11.00).toFixed(2),
     productImage: Prensado_Pure
   },
   {
     id:5,
     productName: 'Dog Prensado com Cheddar',
-    price:parseFloat(11.00),
+    price:parseFloat(11.00).toFixed(2),
     productImage: Prensado_cheddar
   },
   {
     id:6,
     productName: 'Dog Prensado com Catupiry',
-    price:parseFloat(11.00),
+    price:parseFloat(11.00).toFixed(2),
     productImage: Prensado_Catupiry
   },
   {
     id:7,
     productName: 'Dog Prensado com Bacon',
-    price:parseFloat(12.00),
+    price:parseFloat(12.00).toFixed(2),
     productImage: Prensado_Bacon
   },
   {
     id:8,
     productName: 'Dog Prensado com Frango e Catupiry',
-    price:parseFloat(13.00),
+    price:parseFloat(13.00).toFixed(2),
     productImage: Prensado_Frango_Catupiry
   }
 ]

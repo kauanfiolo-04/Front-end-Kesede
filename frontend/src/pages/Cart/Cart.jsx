@@ -5,10 +5,12 @@ import { CartItem } from "./CartItem";
 import './Cart.css'
 
 const Cart=()=>{
-  const {cartItems} = useContext(ShopContext);
+  const { getTotalAmountCart ,cartItems} = useContext(ShopContext);
+  
+  console.log(getTotalAmountCart())
   return(
     <div className="cart">
-      <div>
+      <div className="cartTitle">
         <h1>Items no carrinho</h1>
       </div>
       <div className="cartItems">
@@ -17,13 +19,17 @@ const Cart=()=>{
             return <CartItem data={product} />
           }
         })}
+
+        <div className="checkout">
+          <p>Subtotal: R${getTotalAmountCart()}</p>
+          <div className="btns">
+            <button onClick={()=> document.querySelector('.links').firstChild.click()}>Continue Shopping</button>
+            <button onClick={()=> window.location.href='/checkout'}>Checkout</button>
+          </div>
+        </div>
       </div>
 
-      <div className="checkout">
-        <p>Subtotal: R$</p>
-        <button>Continue Shopping</button>
-        <button>Checkout</button>
-      </div>
+      
     </div>
   )
 }
