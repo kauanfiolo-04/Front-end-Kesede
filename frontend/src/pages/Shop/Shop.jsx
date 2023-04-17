@@ -8,9 +8,11 @@ const Shop=()=>{
       <div className="shopTitle">
         <h1>Lanchonete Prensadão</h1>
       </div>
-      <div className="products"> {PRODUCTS.map((product)=>(
-        <Product data={product}/>
-      ))} </div>
+      <div className="products">
+        {PRODUCTS.map((product)=>(
+          <Product data={product}/>
+        ))} 
+      </div>
     </div>
   )
 }
