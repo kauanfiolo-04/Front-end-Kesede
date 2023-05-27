@@ -4,22 +4,19 @@ import './Checkout.css'
 import { ShopContext } from '../../context/shop-context'
 import { PRODUCTS } from '../../products'
 
-const Checkout = () => {
+export const Checkout = () => {
 
   const { cartItems} = useContext(ShopContext);
-  console.log(cartItems)
-  const returnedProd=PRODUCTS.filter((product)=>cartItems[product.id]!==0)
-  console.log(returnedProd)
+  const itemsAdded=PRODUCTS.filter((product)=>cartItems[product.id]!==0)
 
   return (
     <div>
       Checkout
-      {returnedProd.map((product)=>(
+      {itemsAdded.map((product)=>(
         <h1>{product.productName}</h1>
       ))}
-
     </div>
   )
 }
 
-export default Checkout
+
