@@ -1,6 +1,6 @@
 import React from "react"
 import { PRODUCTS } from "../../products"
-import { Product } from "../Shop/Product"
+import { Product } from "../../components/product/Product"
 
 const Dogs=()=>{
 

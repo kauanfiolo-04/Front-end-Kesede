@@ -1,11 +1,11 @@
-.shop{
+.drinksWrapper{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.shopTitle{
+.drinkTitle{
   font-size: 1.7em;
   color: #780501;
   margin:2px auto;

@@ -1,5 +1,5 @@
 import React from "react"
-import { Product } from "../Shop/Product"
+import { Product } from "../../components/product/Product"
 import { PRODUCTS } from "../../products"
 
 const Lanches=()=>{
