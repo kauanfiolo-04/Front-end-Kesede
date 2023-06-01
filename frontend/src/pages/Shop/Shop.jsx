@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Product } from '../../components/product/Product'
-import jason from '../../xxt.json'
+import {jason} from '../../xxt.js'
 import './Shop.css'
 const Shop=()=>{
   const [PRODUCTS,setFetch]=useState(jason)

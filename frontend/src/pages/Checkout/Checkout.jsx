@@ -2,7 +2,7 @@ import React from 'react'
 import { useContext, useState, useEffect } from 'react'
 import './Checkout.css'
 import { ShopContext } from '../../context/shop-context'
-import jason from '../../xxt.json'
+import {jason} from '../../xxt.js'
 
 
 
