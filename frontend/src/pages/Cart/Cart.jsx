@@ -26,7 +26,6 @@ export const Cart=()=>{
     fetchData()
   },[])
 
-
   const { getTotalAmountCart ,cartItems} = useContext(ShopContext);
   const itemsInCart=PRODUCTS.filter(product=>cartItems[product.id]!==0)
   const navigate=useNavigate()
@@ -42,7 +41,7 @@ export const Cart=()=>{
         })}
 
         <div className="checkout">
-          <p>Subtotal: R${getTotalAmountCart()}</p>
+          <p>Totalotal: R${getTotalAmountCart()}</p>
           <div className="btns">
             <button onClick={()=> navigate('/')}>Continue Shopping</button>
             <button onClick={()=> navigate('/checkout')}>Checkout</button>

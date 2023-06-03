@@ -1,0 +1,15 @@
+.checkoutItem{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: large;
+  font-weight: 600;
+  color:#3e0000
+}
+
+.checkoutItem span:last-child{
+  font-weight: 700;
+  color: #d00e04;
+}

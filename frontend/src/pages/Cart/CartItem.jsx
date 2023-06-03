@@ -13,7 +13,7 @@ const CartItem = (props) => {
           <b>{productName}</b>
         </p>
         <p>
-          R$ {price}
+          R$ {price.toFixed(2)}
         </p>
         <div className="countHandler">
           <button onClick={()=>removeFromCart(id)}> - </button>
