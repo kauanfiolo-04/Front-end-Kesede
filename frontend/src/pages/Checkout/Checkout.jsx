@@ -27,40 +27,70 @@ export const Checkout = () => {
 
   const { cartItems, getTotalAmountCart } = useContext(ShopContext)
   const itemsAdded = PRODUCTS.filter((product) => cartItems[product.id] !== 0)
-  const contentWrapper=useRef(null)
-  const address=useRef(null)
+  const contentWrapper = useRef(null)
+  const address = useRef(null)
 
   return (
     <div className="shop">
-        <div className="shopTitle">
-          <h1>Checkout</h1>
-        </div>
+      <div className="shopTitle">
+        <h1>Checkout</h1>
+      </div>
 
-      <div style={{width:"100%"}} ref={contentWrapper}>
+      <div style={{ width: '100%' }} ref={contentWrapper}>
         <div className="cartItems">
-          {itemsAdded.map((item)=>(
+          {itemsAdded.map((item) => (
             <div className="checkoutItem">
-              <span>{0 === cartItems[item.id] ? item.productName : cartItems[item.id] + ' X ' + item.productName}</span>
+              <span>
+                {0 === cartItems[item.id]
+                  ? item.productName
+                  : cartItems[item.id] + ' X ' + item.productName}
+              </span>
               <p>-</p>
               <span>R$ {cartItems[item.id] * item.price}</span>
             </div>
           ))}
 
+          <span
+            style={{ fontWeight: 'bold', fontSize: '1.5em', color: '#460000' }}
+          >
+            Total: R$ {getTotalAmountCart()}
+          </span>
+
           <label className="address">
-            <input ref={address} type="text" placeholder="Digite seu endereço"/>
+            <input
+              ref={address}
+              type="text"
+              placeholder="Digite seu endereço"
+            />
           </label>
 
-          <span style={{fontWeight: "bold", fontSize: "1.5em", color: "#460000"}}>Total: R$ {getTotalAmountCart()}</span>
-
-          <button onClick={(e,endereco=address.current.value)=>{
-            
-            console.log(endereco)
-            const div=Checkout.createElement("div")
-           }}>Confirmar</button>
+          <button
+            onClick={(e, endereco = address.current) => {
+              console.log(endereco)
+              const div = document.createElement('div')
+              div.classList.add('confirmationWrapper')
+              div.innerHTML = `
+              <p> 
+                Seu pedido no endereço:<br>
+                <span>
+                  ${endereco && endereco.value}
+                </span><br>
+                Foi confirmado ✅<br>
+                Tempo estimado entre 30 a 50 minutos!<br>
+                Agradecemos pela preferência!
+              </p>
+            `
+              if (contentWrapper.current) {
+                contentWrapper.current.classList.add('hidden')
+                contentWrapper.current.parentElement.appendChild(div)
+              }
+            }}
+            className="checkoutBtn"
+          >
+            Confirmar
+          </button>
         </div>
       </div>
-
-
     </div>
   )
 }

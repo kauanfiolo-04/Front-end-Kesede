@@ -13,3 +13,94 @@
   font-weight: 700;
   color: #d00e04;
 }
+
+.checkoutBtn{
+  padding: 10px;
+  width: 150px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border: 2px solid #780501;
+  color: #780501;
+  font-size: .8em;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px 0px rgba(0,0,0,.4);
+  margin-bottom:40px;
+}
+
+.checkoutBtn:hover{
+  background-color: #780501;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.checkoutBtn:active{
+  color: #780501;
+  background-color: #fff;
+  border: 2px solid #780501;
+  box-shadow: inset 3px 3px 3px 0px rgba(0,0,0,.4);
+}
+
+.hidden{
+  display:none;
+}
+
+.address input{
+  outline: none;
+  padding: 10px;
+  width: 700px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border: 2px solid #780501;
+  color: #780501;
+  font-size: 1em;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px 0px rgba(0,0,0,.4);
+  margin-bottom:40px;
+}
+
+.address input::placeholder{
+  color: rgba(187, 0, 0, 0.61);
+}
+
+.address input:hover{
+  background-color: #780501;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.address input:hover::placeholder{
+  color: #fff;
+}
+
+.address input:focus{
+  color: #780501;
+  background-color: #fff;
+  border: 2px solid #780501;
+  box-shadow: inset 3px 3px 3px 0px rgba(0,0,0,.4);
+}
+
+.address input:focus::placeholder{
+  color: rgba(187, 0, 0, 0.61);
+}
+
+.confirmationWrapper{
+  display:block;
+  width:80%;
+  text-align: center;
+  font-size:1.25em;
+  color:#780501;
+  font-weight: 500;
+}
+
+.confirmationWrapper span{
+  font-weight: 800;
+  color:#3e0000;
+}
