@@ -1,1 +1,0 @@
-Trabalho que fiz pra um projeto web da faculdade, onde utilizei React e principalmente o useContext pra criar um sistema de carrinho. O projeto foi desenvolvido a partir de um figma a mim fornecido e se trata do cardápio de uma lanchonete
